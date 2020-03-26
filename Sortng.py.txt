@@ -57,4 +57,38 @@ def bubb_sort(data):
                 data[j], data[j + 1] = data[j + 1], data[j]
 
 bubb_sort(data)
-print(data)
+print("bubb_sort: ",data)
+wp2=int(input('Podaj wartość progową: '))
+tab=[]
+n=0
+for i in range(0,len(data)):
+    if data[n]>wp2:     
+        tab.append(data[n])
+        n+=1
+    else:
+        n+=1
+if len(tab)>=3:
+    print("3 kolejne liczby przekraczające wartość progową-od największej do najmniejszej: ",tab[2],tab[1],tab[0])
+    data = [6,-1,8,10,4,50,2,0,100,34,2,3,4]
+    for i in range(0,len(data)):
+        r=0
+        for i in range(0,(len(data)-1)):
+            if data[r]==tab[0]:
+                r
+            else:
+                r+=1
+        p=0
+        for i in range(0,(len(data)-1)):
+            if data[p]==tab[1]:
+                p
+            else:
+                p+=1
+        s=0
+        for i in range(0,(len(data)-1)):
+            if data[s]==tab[2]:
+                s
+            else:
+                s+=1
+    print("znajdują się pod indeksami: ",s,p,r)
+else:
+    print("za mało licz przekracza próg!!!")
