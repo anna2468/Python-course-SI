@@ -1,5 +1,7 @@
+import time
 #1
 lista=[1,2,5,6,89,10,22,1,30,100,2]
+start=time.clock()
 print("Oryginalna lista",lista)
 wp=int(input('Podaj wartość progową: '))
 tab=[]
@@ -44,12 +46,17 @@ if len(tab)>=3:
                 s
             else:
                 s+=1
+    end= time.clock()
     print("znajdują się pod indeksami: ",s,p,r)
 else:
+    end= time.clock()
     print("za mało licz przekracza próg!!!")
+total=end-start
+print("{0:02f}s".format(total))
 
 #2
 data = [6,-1,8,10,4,50,2,0,100,34,2,3,4]
+start=time.clock()
 def bubb_sort(data):
     for i in range(len(data) - 1, 0, -1):
         for j in range(i):
@@ -89,6 +96,13 @@ if len(tab)>=3:
                 s
             else:
                 s+=1
+    end= time.clock()
     print("znajdują się pod indeksami: ",s,p,r)
 else:
+    end= time.clock()
     print("za mało licz przekracza próg!!!")
+total2=end-start
+print("{0:02f}s".format(total2))
+
+
+print("czas #1: ","{0:02f}s".format(total), "czas #2: ","{0:02f}s".format(total2))
