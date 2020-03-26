@@ -22,7 +22,7 @@ for j in range(0,len(tab)):
         else:
             m=m+1
 
-print("trzy pierwsze wartości, które przekraczają wartość progową:",tab[0],tab[1],tab[2])
+print("trzy pierwsze wartości, które przekraczają wartość progową- od największej do najmniejszej:",tab[2],tab[1],tab[0])
 for i in range(0,len(lista)):
     r=0
     for i in range(0,(len(lista)-1)):
@@ -42,7 +42,7 @@ for i in range(0,len(lista)):
             s
         else:
             s+=1
-print("znajdują się pod indeksami: ",r,p,s)
+print("znajdują się pod indeksami: ",s,p,r)
 
 #2
 data = [6,-1,8,10,4,50,2,0,100,34,2,3,4]
